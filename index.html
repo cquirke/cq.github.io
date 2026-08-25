@@ -21,60 +21,77 @@
 
   <main class="container">
 
-    <!-- Hero / About Section -->
-    <section id="about">
-      <div class="section-title">01 // ABOUT</div>
+   <!-- About Section -->
+<section id="about">
+  <div class="section-title">01 // ABOUT</div>
+
+  <!-- Added a column flex layout to stack the top section and the skills section -->
+  <div class="project-card" style="display: flex; flex-direction: column; gap: 2rem;">
+    
+    <!-- Top Row: Text Left, Image Right -->
+    <div class="card-content-wrapper" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
       
-      <div class="project-card">
-        <div class="card-info">
-          <div>
-            <h1 class="hero-title">Collin Quirke</h1>
-            <p class="hero-subtitle">Pursuing B.S. Mechanical Engineering</p>
-            
-            <p class="card-description">
-              I am a mechanical engineering student at Liberty University in Lynchburg, VA.
-              I'm particularly interested in aerospace, propulsion, and other technically demanding systems where raw engineering, hands-on execution, and rapid iteration come together.
-            </p>
+      <!-- Left Side: Text & Specs -->
+      <div class="card-info" style="flex: 1 1 60%; min-width: 300px;">
+        <div>
+          <h1 class="hero-title">Collin Quirke</h1>
+          <p class="hero-subtitle">Pursuing B.S. Mechanical Engineering</p>
+          
+          <p class="card-description">
+            I am a mechanical engineering student at Liberty University in Lynchburg, VA.
+            I'm particularly interested in aerospace, propulsion, and other technically demanding systems where raw engineering, hands-on execution, and rapid iteration come together.
+          </p>
 
-            <p class="card-description">
-              Through rocketry and independent engineering projects, I've pursued increasing technical ownership and end-to-end thought process to bring all my projects to fruition.
-              I'm looking for opportunities to work on difficult problems with people who expect a high standard of technical rigor, initiative, and execution.
-            </p>
-            
-            <p class="card-description" style="font-style: italic; color: var(--text-dim);">
-              "Use the gifts God has given you to Glorify and Honor Him in Boldness and Truth."
-            </p>
+          <p class="card-description">
+            Through rocketry and independent engineering projects, I've pursued increasing technical ownership and end-to-end thought process to bring all my projects to fruition.
+            I'm looking for opportunities to work on difficult problems with people who expect a high standard of technical rigor, initiative, and execution.
+          </p>
+          
+          <p class="card-description" style="font-style: italic; color: var(--text-dim);">
+            "Use the gifts God has given you to Glorify and Honor Him in Boldness and Truth."
+          </p>
+        </div>
+
+        <div class="spec-grid">
+          <div class="spec-item">
+            <span class="spec-label">FOCUS</span>
+            <span class="spec-value">Aerospace & Propulsion</span>
           </div>
-
-          <div class="spec-grid">
-            <div class="spec-item">
-              <span class="spec-label">FOCUS</span>
-              <span class="spec-value">Aerospace & Propulsion</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">DEGREE</span>
-              <span class="spec-value">B.S. Mechanical Eng.</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">LOCATION</span>
-              <span class="spec-value">Lynchburg, VA</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">STATUS</span>
-              <span class="spec-value">Open to Internships</span>
-            </div>
+          <div class="spec-item">
+            <span class="spec-label">DEGREE</span>
+            <span class="spec-value">B.S. Mechanical Eng.</span>
           </div>
-
-          <div class="tech-tags">
-            <span class="tag">SolidWorks</span>
-            <span class="tag">ANSYS</span>
-            <span class="tag">MATLAB</span>
-            <span class="tag">OpenMotor</span>
-            <span class="tag">AutoCAD</span>
-            <span class="tag">Inventor</span>
-            <span class="tag">Fabrication</span>
+          <div class="spec-item">
+            <span class="spec-label">LOCATION</span>
+            <span class="spec-value">Lynchburg, VA</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">STATUS</span>
+            <span class="spec-value">Open to Internships</span>
           </div>
         </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="card-image" style="flex: 1 1 30%; min-width: 250px; display: flex; justify-content: center;">
+        <img src="image_d09c82.png" alt="Collin Quirke" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </div>
+      
+    </div> <!-- End Top Row -->
+
+    <!-- Bottom Row: Skills separated from the card-info wrapper -->
+    <div class="tech-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+      <span class="tag">SolidWorks</span>
+      <span class="tag">ANSYS</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">OpenMotor</span>
+      <span class="tag">AutoCAD</span>
+      <span class="tag">Inventor</span>
+      <span class="tag">Fabrication</span>
+    </div>
+
+  </div>
+</section>
 
         <div class="card-media">
           <img src="assets/profile.jpg" alt="Collin Quirke" />
@@ -290,8 +307,8 @@
   </main>
 
   <footer>
-    <span>&copy; Collin Quirke</span>
-    <span>Mechanical & Aerospace Engineering</span>
+    <span>Collin Quirke.</span>
+    <span>Built in Github from scratch.</span>
   </footer>
 
 </body>
