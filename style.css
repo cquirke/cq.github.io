@@ -183,14 +183,16 @@ section:last-of-type {
   background: var(--accent-border-hover);
 }
 
-/* Card inside side scroll */
+/* Steele Style: Scrollable Image/Media Card */
 .gallery-card {
-  flex: 0 0 320px;
+  flex: 0 0 360px;
   scroll-snap-align: start;
   background: var(--bg-secondary);
   border: 1px solid var(--accent-border);
   border-radius: var(--radius-md);
-  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: border-color 0.2s ease;
 }
 
@@ -198,68 +200,85 @@ section:last-of-type {
   border-color: var(--accent-border-hover);
 }
 
-.gallery-card-header {
+.gallery-card img,
+.gallery-card video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  background: var(--bg-card);
+}
+
+.gallery-card-content {
+  padding: 16px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .gallery-card-title {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--text-primary);
 }
 
-.status-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--accent-green);
-}
-
-/* Code Snippet Box inside Cards */
-.code-box {
-  background: var(--bg-card);
-  border-radius: var(--radius-sm);
-  padding: 12px;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+.gallery-card-caption {
+  font-size: 0.85rem;
   color: var(--text-muted);
-  overflow-x: auto;
-  white-space: pre;
 }
-
-.code-box .kw { color: #f43f5e; }
-.code-box .fn { color: #60a5fa; }
-.code-box .str { color: var(--accent-green); }
 
 /* ==========================================================================
-   5. EXPERIENCE & TECHNICAL PROFILES
+   5. STEELE-STYLE PROJECT & EXPERIENCE CARDS
    ========================================================================== */
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
-.experience-card {
+/* Technical Split Card (2-Column Grid Layout) */
+.experience-card,
+.project-card {
   background: var(--bg-secondary);
   border: 1px solid var(--accent-border);
   border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.experience-card:hover,
+.project-card:hover {
+  border-color: var(--accent-border-hover);
+}
+
+/* Card Body (Text & Specs Side) */
+.card-info {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .role-header {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 8px;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
 }
 
 .role-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  color: var(--text-primary);
+}
+
+.role-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .role-date {
@@ -268,11 +287,49 @@ section:last-of-type {
   color: var(--text-dim);
 }
 
+/* Key-Value Technical Metadata Table */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+  padding: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 0.5px;
+}
+
+.spec-value {
+  font-family: var(--font-mono);
+  font-size: 0.825rem;
+  color: var(--accent-cyan);
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 12px 0 16px 0;
+  margin-top: auto;
 }
 
 .tag {
@@ -285,24 +342,38 @@ section:last-of-type {
   border: 1px solid var(--accent-border);
 }
 
-.metrics-list {
-  list-style: none;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.metrics-list li {
+/* Card Media/Image Display Side */
+.card-media {
+  background: var(--bg-card);
+  border-left: 1px solid var(--accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   position: relative;
-  padding-left: 18px;
-  margin-bottom: 6px;
+  min-height: 240px;
 }
 
-.metrics-list li::before {
-  content: "›";
-  position: absolute;
-  left: 0;
-  color: var(--accent-cyan);
-  font-family: var(--font-mono);
+.card-media img,
+.card-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile Responsiveness for Split Cards */
+@media (max-width: 768px) {
+  .experience-card,
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-media {
+    border-left: none;
+    border-top: 1px solid var(--accent-border);
+    height: 220px;
+  }
 }
 
 /* ==========================================================================
