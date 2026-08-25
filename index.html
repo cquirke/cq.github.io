@@ -3,26 +3,291 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collin Quirke | Mechanical Engineering Student</title>
+  <title>Collin Quirke | Aerospace & Propulsion Engineering</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Sticky Navbar -->
   <nav class="navbar">
-    <a href="#" class="nav-brand">Collin Quirke</a>
+    <a href="#about" class="nav-brand">COLLIN QUIRKE</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#gallery">Media</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="resume.pdf" class="btn-resume">Resume.pdf</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank" class="btn-resume">Resume</a></li>
     </ul>
   </nav>
 
   <main class="container">
+
     <!-- Hero / About Section -->
     <section id="about">
-      <h1 class="hero-title">Collin Quirke</h1>
-      <p class="hero-subtitle">Aerospace & Propulsion Focus.</p>
+      <div class="section-title">01 // ABOUT</div>
       
+      <div class="project-card">
+        <div class="card-info">
+          <div>
+            <h1 class="hero-title">Collin Quirke</h1>
+            <p class="hero-subtitle">Mechanical Engineering Student @ Liberty University</p>
+            
+            <p class="card-description">
+              Focused on mechanical design, structural analysis, and propulsion systems. Academic and practical focus centers on solid rocket motors, UAV platforms, and propulsion-related hardware. Hands-on experience extends to static fire testing, fabrication, and vehicle maintenance.
+            </p>
+
+            <p class="card-description" style="font-style: italic; color: var(--text-dim);">
+              "Use the gifts God has given you to Glorify and Honor Him in Boldness and Truth."
+            </p>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-item">
+              <span class="spec-label">FOCUS</span>
+              <span class="spec-value">Energetics & Propulsion</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">DEGREE</span>
+              <span class="spec-value">B.S. Mechanical Eng.</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">LOCATION</span>
+              <span class="spec-value">Lynchburg, VA</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">STATUS</span>
+              <span class="spec-value">Tripoli L2 Certified</span>
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tag">SolidWorks</span>
+            <span class="tag">ANSYS</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">OpenMotor</span>
+            <span class="tag">AutoCAD</span>
+            <span class="tag">Inventor</span>
+            <span class="tag">Fabrication</span>
+          </div>
+        </div>
+
+        <div class="card-media">
+          <img src="assets/profile.jpg" alt="Collin Quirke" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Side Scroll Media Gallery Section -->
+    <section id="gallery">
+      <div class="section-title">02 // FIELD & MEDIA GALLERY</div>
+      <div class="side-scroll-gallery">
+
+        <div class="gallery-card">
+          <img src="assets/static-fire.jpg" alt="Static Fire Test" />
+          <div class="gallery-card-content">
+            <span class="gallery-card-title">Static Fire Testing</span>
+            <span class="gallery-card-caption">Solid rocket motor ground test stand setup and data acquisition.</span>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/uav-build.jpg" alt="UAV Design" />
+          <div class="gallery-card-content">
+            <span class="gallery-card-title">UAV Platform Fabrication</span>
+            <span class="gallery-card-caption">Structural assembly and airframe layout for custom flight testing.</span>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/vw-maintenance.jpg" alt="VW Maintenance" />
+          <div class="gallery-card-content">
+            <span class="gallery-card-title">Mechanical Intuition</span>
+            <span class="gallery-card-caption">Hands-on tuning and mechanical rebuild of a 1990s Volkswagen.</span>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/nasa-experience.jpg" alt="NASA Exposure" />
+          <div class="gallery-card-content">
+            <span class="gallery-card-title">Aerospace Operations</span>
+            <span class="gallery-card-caption">Propulsion team collaboration and NASA internship exposure.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Projects Section -->
+    <section id="projects">
+      <div class="section-title">03 // ENGINEERING PROJECTS</div>
+      <div class="experience-list">
+
+        <!-- Project Card 1 -->
+        <article class="project-card">
+          <div class="card-info">
+            <div>
+              <div class="role-header">
+                <h2 class="role-title">V1.0 Solid Rocket Motor</h2>
+                <span class="role-subtitle">Solid Rocket Motor Design & Static Fire</span>
+              </div>
+              <p class="card-description">
+                Designed, modeled, and tested a custom solid rocket motor. Conducted internal ballistics modeling using OpenMotor and executed static fire testing with data acquisition for thrust profile validation.
+              </p>
+            </div>
+
+            <div class="spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">TYPE</span>
+                <span class="spec-value">Solid Energetics</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">ANALYSIS</span>
+                <span class="spec-value">OpenMotor / CAD</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">TESTING</span>
+                <span class="spec-value">Static Fire Stand</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">OUTCOME</span>
+                <span class="spec-value">Validated Data</span>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tag">Propulsion</span>
+              <span class="tag">OpenMotor</span>
+              <span class="tag">Testing</span>
+              <span class="tag">SolidWorks</span>
+            </div>
+          </div>
+          <div class="card-media">
+            <img src="assets/srm-v1.jpg" alt="V1.0 Solid Rocket Motor" />
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card">
+          <div class="card-info">
+            <div>
+              <div class="role-header">
+                <h2 class="role-title">Tripoli Level 2 Certification</h2>
+                <span class="role-subtitle">High-Power Rocketry Construction</span>
+              </div>
+              <p class="card-description">
+                Constructed and launched a high-power rocket system qualified for Level 2 certification under Tripoli High Power Rocketry Association standards. Integrated redundant dual-deployment recovery systems.
+              </p>
+            </div>
+
+            <div class="spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">CERT</span>
+                <span class="spec-value">Tripoli L2</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">RECOVERY</span>
+                <span class="spec-value">Dual-Deploy Altimeter</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">STRUCTURE</span>
+                <span class="spec-value">Composite / Fiber</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">FLIGHT</span>
+                <span class="spec-value">Successful Recovery</span>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tag">Aerospace</span>
+              <span class="tag">Avionics</span>
+              <span class="tag">High-Power Rocketry</span>
+            </div>
+          </div>
+          <div class="card-media">
+            <img src="assets/tripoli-l2.jpg" alt="Tripoli Level 2 Rocket" />
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card">
+          <div class="card-info">
+            <div>
+              <div class="role-header">
+                <h2 class="role-title">Propulsion Onboarding Course</h2>
+                <span class="role-subtitle">Curriculum & Technical Training</span>
+              </div>
+              <p class="card-description">
+                Developed a structured onboarding curriculum covering fundamental rocket propulsion principles, safety protocols, nozzle thermodynamics, and static testing procedures for team members.
+              </p>
+            </div>
+
+            <div class="spec-grid">
+              <div class="spec-item">
+                <span class="spec-label">ROLE</span>
+                <span class="spec-value">Lead / Developer</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">TOPICS</span>
+                <span class="spec-value">Nozzle Flow / Combustion</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">TARGET</span>
+                <span class="spec-value">Engineering Team</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">DOCUMENTATION</span>
+                <span class="spec-value">Technical Specs</span>
+              </div>
+            </div>
+
+            <div class="tech-tags">
+              <span class="tag">Technical Leadership</span>
+              <span class="tag">Documentation</span>
+              <span class="tag">Propulsion Theory</span>
+            </div>
+          </div>
+          <div class="card-media">
+            <img src="assets/propulsion-course.jpg" alt="Propulsion Course Documentation" />
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-title">04 // CONTACT</div>
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title" style="margin-bottom: 8px;">Get In Touch</h2>
+          <p class="card-description">
+            Open to engineering inquiries, propulsion hardware discussions, and aerospace mechanical design opportunities.
+          </p>
+          <div class="spec-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="spec-item">
+              <span class="spec-label">EMAIL</span>
+              <span class="spec-value"><a href="mailto:contact@cquirke.github.io" style="color: var(--accent-cyan); text-decoration: none;">contact@cquirke.github.io</a></span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">GITHUB</span>
+              <span class="spec-value"><a href="https://github.com/cquirke" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">github.com/cquirke</a></span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">LINKEDIN</span>
+              <span class="spec-value"><a href="#" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">LinkedIn Profile</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; Collin Quirke</span>
+    <span>Mechanical & Aerospace Engineering</span>
+  </footer>
+
+</body>
+</html>
