@@ -1,3 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  Collin
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C Quirke | Senior Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="nav-brand">C.Q.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="resume.pdf" class="btn-resume">Resume.pdf</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <!-- Hero / About Section -->
+    <section id="about">
+      <h1 class="hero-title">Christopher Quirke</h1>
+      <p class="hero-subtitle">Senior Software Engineer. Building scalable, high-performance systems.</p>
+      
+      <!-- Side-Scrollable Interactive Gallery -->
+      <div class="gallery-wrapper">
+        <div class="side-scroll-gallery">
+          
+          <div class="gallery-card">
+            <div class="gallery-card-header">
+              <span class="gallery-card-title">Distributed Pipeline</span>
+              <span class="status-indicator"></span>
+            </div>
+            <div class="code-box">
+<span class="kw">def</span> <span class="fn">process_stream</span>(data):
+    batch = data.<span class="fn">transform</span>()
+    <span class="kw">return</span> pipeline.<span class="fn">flush</span>(batch)
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-header">
+              <span class="gallery-card-title">Latency Metrics</span>
+              <span class="status-indicator"></span>
+            </div>
+            <div class="code-box">
+p99_latency: <span class="str">12ms</span>
+throughput: <span class="str">45k req/sec</span>
+cache_hit_ratio: <span class="str">99.4%</span>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-header">
+              <span class="gallery-card-title">Cluster Topology</span>
+              <span class="status-indicator"></span>
+            </div>
+            <div class="code-box">
+[API Gateway] ──► [Auth Proxy]
+                     │
+                     ▼
+           [Kubernetes Cluster]
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-header">
+              <span class="gallery-card-title">Auto-Scaler Config</span>
+              <span class="status-indicator"></span>
+            </div>
+            <div class="code-box">
+<span class="kw">apiVersion</span>: autoscaling/v2
+<span class="kw">minReplicas</span>: <span class="str">5</span>
+<span class="kw">maxReplicas</span>: <span class="str">100</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-list">
+        
+        <div class="experience-card">
+          <div class="role-header">
+            <h3 class="role-title">Senior Software Engineer — Lead Backend Architecture</h3>
+            <span class="role-date">2023 — PRESENT</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS Lambda</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <ul class="metrics-list">
+            <li>Architected distributed microservices handling over 10M daily requests with 99.99% uptime.</li>
+            <li>Optimized model deployment pipelines, cutting end-to-end inference latency by 45%.</li>
+            <li>Implemented automated CI/CD workflows reducing feature release turnaround from days to minutes.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <div class="role-header">
+            <h3 class="role-title">Software Engineer — Systems & Infrastructure</h3>
+            <span class="role-date">2021 — 2023</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tag">Go</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Redis</span>
+            <span class="tag">gRPC</span>
+          </div>
+          <ul class="metrics-list">
+            <li>Designed and executed Redis cluster caching strategy, lowering database load by 60%.</li>
+            <li>Migrated legacy monolith to containerized Kubernetes pods using blue-green deployment strategies.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Technical Projects</h2>
+      <div class="experience-list">
+        
+        <div class="experience-card">
+          <div class="role-header">
+            <h3 class="role-title">High-Throughput Log Aggregator</h3>
+            <span class="role-date">Open Source</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tag">Rust</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">ClickHouse</span>
+          </div>
+          <ul class="metrics-list">
+            <li>Engineered a custom telemetry collector streaming 100k+ events/sec into ClickHouse storage.</li>
+            <li>Achieved zero-data-loss guarantees under node drop scenarios using custom WAL replication.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="experience-card">
+        <div class="tech-tags">
+          <span class="tag">Distributed Systems</span>
+          <span class="tag">API Design</span>
+          <span class="tag">Cloud Architecture</span>
+          <span class="tag">Performance Tuning</span>
+          <span class="tag">CI/CD Pipelines</span>
+          <span class="tag">Database Optimization</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Christopher Quirke</span>
+    <span><a href="https://github.com/cquirke" target="_blank">github.com/cquirke</a></span>
+  </footer>
+
+</body>
+</html>
