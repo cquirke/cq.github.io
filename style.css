@@ -325,6 +325,31 @@ footer a {
   text-decoration: none;
 }
 
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.spec-label {
+  font-size: 0.75rem;
+  color: #888888; /* A dim gray for contrast */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.spec-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff; /* Bright white to pop */
+}
 footer a:hover {
   color: var(--accent-cyan);
 }
