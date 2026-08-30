@@ -353,3 +353,25 @@ footer a {
 footer a:hover {
   color: var(--accent-cyan);
 }
+
+.card-description i {
+  display: block;
+  border-left: 3px solid var(--accent-cyan); /* Assuming you have this variable */
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag:hover {
+  background-color: rgba(0, 150, 255, 0.15); /* Adjust to match your cyan accent */
+  border-color: #0096ff;
+  transform: translateY(-2px);
+}
