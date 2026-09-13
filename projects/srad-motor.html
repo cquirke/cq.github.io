@@ -19,37 +19,35 @@
   <main class="container">
 
     <section id="project-hero">
-      <div class="section-title">PROJECT // SRAD SOLID ROCKET MOTOR</div>
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h1 class="hero-title">SRAD H-Class Solid Rocket Motor</h1>
-          <p class="hero-subtitle">38mm RNX-71 — Design Through Manufacturing</p>
+      <div class="section-title">PROJECT // SRM-01</div>
+      <div class="detail-hero">
+        <h1 class="hero-title">SRAD H-Class Solid Rocket Motor</h1>
+        <p class="hero-subtitle">38mm RNX-71 — Design Through Manufacturing</p>
 
-          <div class="spec-grid">
-            <div class="spec-item">
-              <span class="spec-label">CLASS</span>
-              <span class="spec-value">38mm H-Class / 400 psi</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">NOZZLE</span>
-              <span class="spec-value">2-Part Al / Phenolic, Conical</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">ANALYSIS</span>
-              <span class="spec-value">MATLAB / ANSYS / RPA</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">STATUS</span>
-              <span class="spec-value">Paused — Resuming Independently</span>
-            </div>
+        <div class="tech-tags">
+          <span class="tag">Propulsion</span>
+          <span class="tag">SRAD</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">ANSYS</span>
+          <span class="tag">Nozzle Design</span>
+        </div>
+
+        <div class="detail-specs">
+          <div class="vital">
+            <span class="vital-label">Class</span>
+            <span class="vital-value">38mm H-Class / 400 psi</span>
           </div>
-
-          <div class="tech-tags">
-            <span class="tag">Propulsion</span>
-            <span class="tag">SRAD</span>
-            <span class="tag">MATLAB</span>
-            <span class="tag">ANSYS</span>
-            <span class="tag">Nozzle Design</span>
+          <div class="vital">
+            <span class="vital-label">Nozzle</span>
+            <span class="vital-value">2-Part Al / Phenolic, Conical</span>
+          </div>
+          <div class="vital">
+            <span class="vital-label">Analysis</span>
+            <span class="vital-value">MATLAB / ANSYS / RPA</span>
+          </div>
+          <div class="vital">
+            <span class="vital-label">Status</span>
+            <span class="vital-value">Paused — Resuming Independently</span>
           </div>
         </div>
       </div>
@@ -57,67 +55,55 @@
 
     <section id="project-detail">
 
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h2 class="role-title">Overview</h2>
-          <p class="card-description">
-            This was Liberty Rocketry's first attempt at a fully student-researched-and-developed motor. I led the project end-to-end — design, analysis, and the start of manufacturing — before it was paused by the university for review. Development continues independently.
-          </p>
-        </div>
+      <div class="detail-block">
+        <h2 class="role-title">Overview</h2>
+        <p class="card-description">
+          This was Liberty Rocketry's first attempt at a fully student-researched-and-developed motor. I led the project end-to-end — design, analysis, and the start of manufacturing — before it was paused by the university for review. Development continues independently.
+        </p>
       </div>
 
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h2 class="role-title">Why RNX-71</h2>
-          <p class="card-description">
-            As a first SRAD engine, minimizing risk while proving out the full design-to-manufacture pipeline mattered more than performance. RNX-71 is inexpensive, low-power, and low-consequence, making it well suited for validating process and procedure — including navigating the university's safety approval — before scaling up.
-          </p>
-        </div>
+      <div class="detail-block">
+        <h2 class="role-title">Why RNX-71</h2>
+        <p class="card-description">
+          As a first SRAD engine, minimizing risk while proving out the full design-to-manufacture pipeline mattered more than performance. RNX-71 is inexpensive, low-power, and low-consequence, making it well suited for validating process and procedure — including navigating the university's safety approval — before scaling up.
+        </p>
       </div>
 
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h2 class="role-title">Design Process</h2>
-          <p class="card-description">
-            Starting from the target scope (38mm, H-class, 400 psi chamber pressure), I worked outward: sized the throat and propellant grain using hand calculations and MATLAB, solved case and closure geometry to close out the pressure vessel design, ran thermal and fluid interaction checks by hand and then in ANSYS, and cross-validated overall motor performance in OpenRocket and RPA before settling on a final design. I modeled the design in CAD and 3D-printed a scale mockup to verify fit before committing to metal.
-          </p>
-        </div>
-        <div class="card-media">
+      <div class="detail-block">
+        <h2 class="role-title">Design Process</h2>
+        <p class="card-description">
+          Starting from the target scope (38mm, H-class, 400 psi chamber pressure), I worked outward: sized the throat and propellant grain using hand calculations and MATLAB, solved case and closure geometry to close out the pressure vessel design, ran thermal and fluid interaction checks by hand and then in ANSYS, and cross-validated overall motor performance in OpenRocket and RPA before settling on a final design. I modeled the design in CAD and 3D-printed a scale mockup to verify fit before committing to metal.
+        </p>
+        <div class="project-media">
           <img src="../assets/srad-matlab.jpg" alt="MATLAB sizing calculations" />
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h2 class="role-title">Nozzle Design</h2>
-          <p class="card-description">
-            Designed a two-part nozzle: an aluminum carrier with a phenolic insert, chosen specifically for conical geometry so it could be manufactured on a manual lathe — a manufacturing-constraint-driven decision rather than a performance-optimal one, which mattered for a first-time in-house build.
-          </p>
-        </div>
-        <div class="card-media">
+      <div class="detail-block">
+        <h2 class="role-title">Nozzle Design</h2>
+        <p class="card-description">
+          Designed a two-part nozzle: an aluminum carrier with a phenolic insert, chosen specifically for conical geometry so it could be manufactured on a manual lathe — a manufacturing-constraint-driven decision rather than a performance-optimal one, which mattered for a first-time in-house build.
+        </p>
+        <div class="project-media">
           <img src="../assets/srad-nozzle-cad.jpg" alt="Nozzle CAD model" />
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h2 class="role-title">Manufacturing &amp; Process Planning</h2>
-          <p class="card-description">
-            While the case and closure hardware was on order, I finalized the propellant mixing and casting process, including batch ratios and quality-control checks. The manufacturing plan called for 4 grains — 3 for the motor, 1 dedicated to quality testing. Case and closure manufacturing began once material arrived, before the project was paused.
-          </p>
-        </div>
-        <div class="card-media">
+      <div class="detail-block">
+        <h2 class="role-title">Manufacturing &amp; Process Planning</h2>
+        <p class="card-description">
+          While the case and closure hardware was on order, I finalized the propellant mixing and casting process, including batch ratios and quality-control checks. The manufacturing plan called for 4 grains — 3 for the motor, 1 dedicated to quality testing. Case and closure manufacturing began once material arrived, before the project was paused.
+        </p>
+        <div class="project-media">
           <img src="../assets/srad-manufacturing.jpg" alt="Case and closure manufacturing" />
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="card-info" style="grid-column: 1 / -1;">
-          <h2 class="role-title">Status</h2>
-          <p class="card-description">
-            Design is complete and validated across multiple tools. Manufacturing is paused pending university review and will resume independently.
-          </p>
-        </div>
+      <div class="detail-block">
+        <h2 class="role-title">Status</h2>
+        <p class="card-description">
+          Design is complete and validated across multiple tools. Manufacturing is paused pending university review and will resume independently.
+        </p>
       </div>
 
     </section>
