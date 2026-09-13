@@ -250,19 +250,13 @@ section:last-of-type {
 .vitals-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
+  gap: 24px;
   margin-top: 36px;
-  border-top: 1px solid var(--accent-border);
 }
 
 .vital {
   flex: 1 1 200px;
-  padding: 16px 24px 16px 0;
-  border-right: 1px solid var(--accent-border);
-}
-
-.vital:last-child {
-  border-right: none;
+  padding: 0;
 }
 
 .vital-label {
@@ -661,15 +655,7 @@ footer a:hover {
 
   .vitals-row {
     flex-direction: column;
-  }
-
-  .vital {
-    border-right: none;
-    border-bottom: 1px solid var(--accent-border);
-  }
-
-  .vital:last-child {
-    border-bottom: none;
+    gap: 16px;
   }
 
   .project-entry {
