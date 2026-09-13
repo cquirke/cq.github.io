@@ -158,7 +158,7 @@ section:last-of-type {
    ========================================================================== */
 .hero-panel {
   display: grid;
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: 1fr 320px;
   gap: 48px;
   align-items: start;
 }
@@ -221,8 +221,8 @@ section:last-of-type {
 .hero-photo-frame::after {
   content: "";
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
   border-color: var(--accent-cyan);
   border-style: solid;
 }
@@ -636,44 +636,127 @@ footer a:hover {
    10. RESPONSIVE
    ========================================================================== */
 @media (max-width: 760px) {
-  body { padding-top: 64px; }
+  body { padding-top: 60px; }
 
   .navbar { padding: 0 16px; }
-  .nav-links { gap: 14px; }
+  .nav-links { gap: 12px; }
+  .nav-links a:not(.btn-resume) {
+    font-size: 0.75rem;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
 
   .hero-panel {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .hero-photo-frame {
-    max-width: 200px;
+    order: -1;
+    max-width: 220px;
+    margin: 0 auto 8px;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    margin-top: 4px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 16px;
+  }
+
+  .card-description {
+    margin-bottom: 12px;
+  }
+
+  .credo {
+    margin: 16px 0 4px 0;
   }
 
   .vitals-row {
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
+    margin-top: 24px;
+  }
+
+  .skills-row {
+    margin-top: 28px;
   }
 
   .project-entry {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
+    padding: 32px 0;
+  }
+
+  .project-index {
+    gap: 12px;
   }
 
   .project-specs {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
+    padding-top: 6px;
+  }
+
+  .project-main {
+    gap: 12px;
+  }
+
+  .detail-block {
+    padding: 24px 0;
+    gap: 12px;
+  }
+
+  .detail-hero {
+    padding-bottom: 24px;
+  }
+
+  .detail-specs {
+    margin-top: 20px;
+  }
+
+  .detail-specs .vital {
+    flex: 1 1 45%;
   }
 
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+    padding-top: 16px;
+  }
+
+  .contact-panel {
+    gap: 14px;
   }
 
   .gallery-card {
     flex-basis: 240px;
   }
+
+  footer {
+    padding: 24px 18px;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
 }
+
+@media (max-width: 420px) {
+  .nav-links li:not(:last-child) {
+    display: none;
+  }
+}
+
