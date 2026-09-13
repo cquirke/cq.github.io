@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRM Design Automation Tool | Collin Quirke</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html#top" class="nav-brand">COLLIN QUIRKE</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projects">&larr; Back to Projects</a></li>
+      <li><a href="../resume.pdf" target="_blank" class="btn-resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <section id="project-hero">
+      <div class="section-title">PROJECT // SRM DESIGN AUTOMATION</div>
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h1 class="hero-title">SRM Design Automation Tool</h1>
+          <p class="hero-subtitle">MATLAB GUI — Analytical Solid Motor Sizing</p>
+
+          <div class="spec-grid">
+            <div class="spec-item">
+              <span class="spec-label">PLATFORM</span>
+              <span class="spec-value">MATLAB (GUI)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">METHOD</span>
+              <span class="spec-value">Fully Analytical</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">MODULES</span>
+              <span class="spec-value">Throat / Grain / Nozzle / Closure</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">STATUS</span>
+              <span class="spec-value">Functional — Validating</span>
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Propulsion</span>
+            <span class="tag">Design Automation</span>
+            <span class="tag">Internal Ballistics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project-detail">
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Overview</h2>
+          <p class="card-description">
+            After running the sizing process for the SRAD H-Class motor largely by hand and in scattered MATLAB scripts, I built a single MATLAB GUI to formalize and speed up that workflow — a tool that takes a motor from target operating pressure to a finished closure fastening plan in one continuous pass.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Pressure &amp; Throat Sizing</h2>
+          <p class="card-description">
+            The user sets chamber size or a target operating pressure, which fixes the motor's operating pressure. From there, the tool calculates the throat diameter needed to sustain that pressure with minimal grain surface area — the first constraint that shapes every downstream decision.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Grain Geometry Optimization</h2>
+          <p class="card-description">
+            With the throat and pressure fixed, the propellant solver optimizes grain geometry across multiple candidate pattern types analytically, rather than through iterative simulation, to converge on a workable design.
+          </p>
+        </div>
+        <div class="card-media">
+          <img src="../assets/srm-app-grain.jpg" alt="Grain geometry solver output" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Nozzle Contour</h2>
+          <p class="card-description">
+            Based on the selected manufacturing technique, the tool calculates either a full contoured nozzle or a simpler conical geometry for optimum expansion — the same manufacturing-driven trade-off I had to work through by hand on the SRAD motor, now generalized.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Closure &amp; Retention</h2>
+          <p class="card-description">
+            Finally, based on operating pressure and the user's choice of retention method, the tool calculates either the correct bolt size and pattern for a bolted closure, or the correct thread size and engagement length for a threaded closure.
+          </p>
+        </div>
+        <div class="card-media">
+          <img src="../assets/srm-app-gui.jpg" alt="SRM automation tool GUI" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Validation &amp; Related Work</h2>
+          <p class="card-description">
+            I'm currently validating the tool's outputs against hand calculations and known reference motors. This work pairs with an RK4-based internal ballistics physics modeler I developed and submitted as an abstract to IREC — a complementary numerical approach to grain burn simulation, alongside this tool's fully analytical method.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-info" style="grid-column: 1 / -1;">
+          <h2 class="role-title">Status</h2>
+          <p class="card-description">
+            All four modules are functional end-to-end. Validation against reference data is ongoing.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Collin Quirke.</span>
+    <span>Built in Github from scratch.</span>
+  </footer>
+
+</body>
+</html>
