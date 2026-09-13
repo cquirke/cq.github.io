@@ -690,6 +690,10 @@ footer a:hover {
     margin-top: 24px;
   }
 
+  .vitals-row .vital {
+    flex: 0 1 auto;
+  }
+
   .skills-row {
     margin-top: 28px;
   }
